@@ -11,3 +11,5 @@ class Petuser(serializers.ModelSerializer):
     class Meta:
         model=Hello
         fields="__all__"
+
+

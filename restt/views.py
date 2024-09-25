@@ -26,4 +26,11 @@ import requests
 def index(request):
     response=requests.get('http://127.0.0.1:8000/stores/')
     data=response.json()
+    print(data)
     return render(request,"index.html",{'data':data})
+
+def index2(request):
+    response=requests.get('http://127.0.0.1:8000/pettaker/')
+    data=response.json()
+    print(response)
+    return render(request,'index2.html',{'data':data})
